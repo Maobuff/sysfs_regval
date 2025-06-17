@@ -1,0 +1,38 @@
+{
+  "env": {
+    "kernelFolder": "/lib/modules/*/build/"
+  },
+  "configurations": [
+    {
+      "name": "Linux Modules",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${kernelFolder}/include",
+        "${kernelFolder}/include/uapi",
+        "${kernelFolder}/arch/x86/include",
+        "${kernelFolder}/arch/x86/include/uapi",
+        "${kernelFolder}/arch/x86/include/generated",
+        "${kernelFolder}/arch/x86/include/generated/uapi"
+      ],
+      "defines": [
+        "__KERNEL__",
+        "MODULE"
+      ],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "intelliSenseMode": "linux-gcc-x64",
+      "browse": {
+        "limitSymbolsToIncludedHeaders": true,
+        "path": [
+          "${kernelFolder}/include",
+          "${kernelFolder}/include/uapi",
+          "${kernelFolder}/arch/x86/include",
+          "${kernelFolder}/arch/x86/include/uapi",
+          "${kernelFolder}/arch/x86/include/generated",
+          "${kernelFolder}/arch/x86/include/generated/uapi"
+        ]
+      }
+    }
+  ],
+  "version": 4
+}
