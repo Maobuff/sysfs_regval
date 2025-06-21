@@ -1,4 +1,4 @@
-obj-m = sysfs_regval.o
+obj-m = regval_list.o
 
 all:
 		make -C /lib/modules/$(shell uname -r)/build/ M=$(PWD) modules
